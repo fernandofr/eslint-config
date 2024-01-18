@@ -11,15 +11,16 @@ module.exports = {
   },
   plugins: ['@typescript-eslint'],
   rules: {
+    "no-useless-constructor": "off",
     'prettier/prettier': [
       'error',
       {
-        printWidth: 80,
+        printWidth: 150,
         tabWidth: 2,
         singleQuote: true,
         trailingComma: 'all',
         arrowParens: 'always',
-        semi: false,
+        semi: true,
       },
     ],
   },
